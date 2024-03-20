@@ -45,3 +45,6 @@ New-AzResourceGroupDeployment -TemplateFile modules/storage1.bicep  -TemplatePar
 
 https://learn.microsoft.com/en-us/training/modules/build-first-bicep-template/4-exercise-define-resources-bicep-template?pivots=powershell 
 
+
+***AVM lab***
+https://github.com/Azure-Samples/avm-bicep-labs/tree/main
