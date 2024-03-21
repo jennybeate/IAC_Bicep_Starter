@@ -11,9 +11,10 @@ Set-AzContext $context
 Get-AzSubscription
 Set a default resource group if you like: Set-AzDefault -ResourceGroupName rsg-sbx-workshop-<yourname>
 
+Set a default resource group if you like: Set-AzDefault -ResourceGroupName rsg-sbx-tab-auth - I have created resource groups for you
 Point to the path of your file
-New-AzResourceGroupDeployment -TemplateFile modules/storage1.bicep 
-Get-AzResourceGroupDeployment -ResourceGroupName rsg-sbx-workshop-<yourname> | Format-Table
+New-AzResourceGroupDeployment -TemplateFile 1.modules/1storage.bicep 
+Get-AzResourceGroupDeployment -ResourceGroupName rsg-sbx-tab-auth | Format-Table
 
 See the "Deployments blade" on the resource group you deployed to.
 
