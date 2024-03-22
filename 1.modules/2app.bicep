@@ -1,6 +1,8 @@
 metadata description = '''Usually we want to just have one resource pr module, but this is just a demo.
-The app service depends on the app service plan. It needs the resource ID, so we reference it using dotnotation. 
-This makes the app creation happen after its dependency, and not before'''
+The app service depends on the app service plan. The main point here is dependencies: creating resources in the right order
+and using outputs when they depend on each other. (There are different ways of doing this). The second resource needs the resource ID, so we reference it using dotnotation. 
+Test seeing what kind of properties you can output by using dotnotation with the bicep cli extension installed.
+This makes the app creation happen after its dependency, and not before, and is the preferred way to declare dependencies.'''
 
 
 @allowed([
